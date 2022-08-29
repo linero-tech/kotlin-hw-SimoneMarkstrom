@@ -1,6 +1,11 @@
 package lms_126
 
 fun task3() {
-
-    TODO("Erase this line and write your solution")
 }
+
+//INPUT get the base of the triangle
+//INPUT get the base height of the triangle
+//Multiply base height
+//Divide result by two
+//OUTPUT the result to the user
+
