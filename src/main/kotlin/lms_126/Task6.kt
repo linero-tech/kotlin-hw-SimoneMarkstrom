@@ -2,5 +2,6 @@ package lms_126
 
 fun task6() {
 
-    TODO("Erase this line and write your solution")
-}
+/* INPUT all the numbers between 1 and 100
+//Multiply it by 5
+// OUTPUT the result */
