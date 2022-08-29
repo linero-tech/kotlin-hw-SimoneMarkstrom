@@ -2,5 +2,7 @@ package lms_126
 
 fun task2() {
 
-    TODO("Erase this line and write your solution")
-}
+//INPUT get the base of the rectangle
+//INPUT get the height of the rectangle
+//Multiply base time height
+//OUTPUT the result to the user
