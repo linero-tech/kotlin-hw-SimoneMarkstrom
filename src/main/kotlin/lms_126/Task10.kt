@@ -1,6 +1,11 @@
 package lms_126
 
 fun task10() {
-
-    TODO("Erase this line and write your solution")
+    /* INPUT Email webb-site
+    //Click on create a new account
+    //INPUT name lastname account name
+    //INPUT password with more than six characters
+    //Accept the rules
+    //OUTPUT you got your account
+     */
 }
