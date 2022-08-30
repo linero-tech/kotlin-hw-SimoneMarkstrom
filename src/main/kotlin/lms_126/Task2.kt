@@ -1,6 +1,6 @@
 package lms_126
 
-fun task2() {
+fun task2()
 
 /* INPUT get the base of the rectangle
 //INPUT get the height of the rectangle
