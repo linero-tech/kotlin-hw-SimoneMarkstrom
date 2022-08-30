@@ -6,4 +6,4 @@ fun task5() {
 it goes from one to eight
 monday is 1
 write the corresponding day of the week
-OUTPUT the result */
+OUTPUT the result */ }
