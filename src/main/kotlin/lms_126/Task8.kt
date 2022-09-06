@@ -2,15 +2,15 @@ package lms_126
 
 fun task8() {
 
-/* INPUT write the value of x
-Multiply x 3
-IF print Foo
-Multiply x 5
-IF print Bar
-Multiply x 3 5
-IF print FooBar
-x is not multiplied by 3 5
-IF print Qix */
-
+/*
+1.INPUT write the value of x
+2. ELSE IF X % 3 or 5 = 0
+  OUTPUT Foobar
+3.ELSE IF % 5 = 0
+  OUTPUT bar
+4.IF x % 3 = 0
+   OUTPUT Foo
+5.ELSE
+   OUTPUT Qix */
 
 }
