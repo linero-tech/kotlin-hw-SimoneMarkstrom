@@ -2,23 +2,19 @@ package lms_127
 
 fun task5(valueForA: Int, valueForB: Int): Pair<Int, Int> {
     // Do not change or delete these variables
-    var a= 1
-    var b= 2
+    var a = valueForA
+    var b = valueForB
 
-    a = 2
-    b = 1
+  a = b.also { b = a }
 
-    val valueForA = a
-    val ValueForB = b
-
-
- println ("$a")
-    println("$b")
+ println ("value for a is $a")
+    println("value for b is $b")
 
     // Do not erase or change this statement
     return Pair(a, b)
 }
 
 fun main (){
-    task5()
+    task5(valueForA = 1, valueForB=2)
 }
+
