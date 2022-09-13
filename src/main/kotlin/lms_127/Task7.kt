@@ -4,7 +4,7 @@ fun task7(sentence: String): Int {
 
 
     //initialize a sentence
-    var sentence = "sentence"
+    val sentence = "sentence"
 
     //count the number of the sentence
 
