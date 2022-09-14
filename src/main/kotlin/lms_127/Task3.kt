@@ -9,3 +9,7 @@ fun task3(radius: Double): Double {
 
     return result
 }
+
+fun main(){
+    task3(radius=2.0)
+}

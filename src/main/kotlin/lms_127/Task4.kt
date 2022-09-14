@@ -9,3 +9,6 @@ fun task4(base: Double, height: Double): Double {
 
 }
 
+fun main(){
+    task4(base=5.0, height=10.0)
+}

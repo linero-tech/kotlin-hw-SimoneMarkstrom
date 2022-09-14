@@ -9,3 +9,7 @@ fun task1() {
     println ("Capital= $capital")
     println ("Currency= $currency")
 }
+
+fun main(){
+    task1()
+}

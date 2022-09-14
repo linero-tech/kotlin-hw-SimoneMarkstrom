@@ -14,3 +14,7 @@ fun task7(sentence: String): Int {
     return result
 
 }
+
+fun main(){
+    task7("I love GBG")
+}
