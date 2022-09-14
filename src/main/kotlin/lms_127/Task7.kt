@@ -3,26 +3,18 @@ package lms_127
 fun task7(sentence: String): Int {
 
 
-    //initialize a sentence
-    val sentence = "sentence"
-
-    //count the number of the sentence
-
-    val numberOfCharacters = sentence.length
-
-    val result = numberOfCharacters
+   //count the length on the sentence
+    val result = sentence.length
 
 
-    println("$numberOfCharacters")
+    //print the result
+    println ("The number of characters in sentence are $result")
 
 
     return result
 
-
-
 }
 
 fun main(){
-
-    task7("")
+    task7(sentence = "I love GBG")
 }
