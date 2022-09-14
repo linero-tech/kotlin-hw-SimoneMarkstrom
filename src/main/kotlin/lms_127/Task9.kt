@@ -2,5 +2,14 @@ package lms_127
 
 fun task9(sentence: String, character: Char): Boolean {
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+
+    val result = sentence.contains(character)
+
+    println ("the result is $result")
+
+    return result
 }
+
+fun main () {
+    task9(sentence="i code in KOTLIN",'i')
+            }
