@@ -14,9 +14,3 @@ fun task8(sentence: String, character: Char): Int {
 }
 
 
-
-
-fun main (){
-    task8(sentence = "I code in KOTLIN", character ='I')
-}
-

@@ -9,7 +9,3 @@ fun task9(sentence: String, character: Char): Boolean {
 
     return result
 }
-
-fun main () {
-    task9(sentence="i code in KOTLIN",'i')
-            }
