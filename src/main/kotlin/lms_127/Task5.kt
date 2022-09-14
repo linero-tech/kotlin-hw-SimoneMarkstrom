@@ -14,7 +14,7 @@ fun task5(valueForA: Int, valueForB: Int): Pair<Int, Int> {
     return Pair(a, b)
 }
 
-fun main (){
+fun main() {
     task5(valueForA = 1, valueForB=2)
 }
 
