@@ -2,11 +2,11 @@ package lms_127
 
 fun task2() {
 
-    val name = "Jane"
-    val country = "Sweden"
-    val month = "June"
+    val name = "NAME"
+    val country = "COUNTRY"
+    val month = "MONTH"
 
-    println ("Hello $name, you are from $country and where born in $month")
+    println ("Hello $name, you are from $country and you where born in $month")
 }
 
 fun main(){
