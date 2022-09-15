@@ -5,9 +5,9 @@ fun task1() {
     val capital = "CAPITAL NAME"
     val currency = "CURRENCY NAME"
 
-    println ("Country= $country" )
-    println ("Capital= $capital")
-    println ("Currency= $currency")
+    println ("Country: $country" )
+    println ("Capital: $capital")
+    println ("Currency: $currency")
 }
 
 fun main(){
