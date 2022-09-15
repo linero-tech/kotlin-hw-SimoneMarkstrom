@@ -22,7 +22,7 @@ fun task10_2(assessments: String): Char {
 
 fun task10_3(assessments: String): Char {
 
-    val result= assessments[3]
+    val result= assessments[2]
 
     println (result)
 
@@ -42,9 +42,10 @@ fun task10_4(assessments: String): String {
 
 
 fun main(){
-    task10_3(assessments="LMFHM")
+
+    task10_1(assessments="LMHHF")
     task10_2(assessments="LMFHMF")
-    task10_1(assessments="LMFHMF")
+    task10_3(assessments="LMFHM")
     task10_4(assessments="LMFHM")
 }
 
