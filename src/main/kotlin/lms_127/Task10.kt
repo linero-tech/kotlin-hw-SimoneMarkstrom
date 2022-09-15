@@ -22,8 +22,9 @@ fun task10_2(assessments: String): Char {
 
 fun task10_3(assessments: String): Char {
 
-    val result= assessments.length/2
 
+    val indexHalfAssessments= assessments.length/2
+    val result= assessments[indexHalfAssessments]
 
 
     println (result)
