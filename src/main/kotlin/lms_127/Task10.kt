@@ -2,7 +2,7 @@ package lms_127
 
 fun task10_1(assessments: String): Int {
 
-    val result= assessments.length
+    val result= assessments.count()
 
     println (result)
 
@@ -22,7 +22,7 @@ fun task10_2(assessments: String): Char {
 
 fun task10_3(assessments: String): Char {
 
-    val result= assessments[2]
+    val result= assessments[3]
 
     println (result)
 

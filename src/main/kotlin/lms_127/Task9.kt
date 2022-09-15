@@ -3,13 +3,16 @@ package lms_127
 fun task9(sentence: String, character: Char): Boolean {
 
 
-    val result = sentence.contains(character)
+    val result = sentence.contains(character, ignoreCase= true)
+
+
 
     println ("the result is $result")
+
 
     return result
 }
 
 fun main(){
-    task9(sentence="I code in KOTLIN", character='i')
+    task9(sentence="I code In KOTLIN", character='i')
 }
