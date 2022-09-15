@@ -41,7 +41,12 @@ fun task10_4(assessments: String): String {
 
 
 
-fun main() {
+fun main(){
     task10_3(assessments="LMFHM")
+    task10_2(assessments="LMFHMF")
+    task10_1(assessments="LMFHMF")
+    task10_4(assessments="LMFHM")
 }
+
+
 
