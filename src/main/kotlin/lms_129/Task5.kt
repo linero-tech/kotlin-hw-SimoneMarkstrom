@@ -22,5 +22,5 @@ fun task5(sentence: String): Int {
 
 fun main(){
     task5( sentence = "I Love GBG")
-    
+
 }
