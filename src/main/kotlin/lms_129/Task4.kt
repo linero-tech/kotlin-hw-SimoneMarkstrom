@@ -2,5 +2,18 @@ package lms_129
 
 fun task4(): Int {
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    val result= 1
+    for (result in 1..1000)
+        if (result % 9 == 0)
+
+            println("$result")
+
+
+    return result
+
+}
+
+fun main(){
+     task4()
+
 }
