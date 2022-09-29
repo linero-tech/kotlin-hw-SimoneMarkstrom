@@ -2,10 +2,18 @@ package lms_129
 
 fun task8(number: Int): Int {
 
-    val result = 0
-    
+   var result=  0
+    var number= number
+    while( number > 0){
+        var digit= number % 10
+        result = digit + result
+        number /=10
+    }
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+
+    return result
 }
+fun main(){
+    println(task8(number=1))
 
-
+}

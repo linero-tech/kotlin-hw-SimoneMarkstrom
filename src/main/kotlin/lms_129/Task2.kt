@@ -3,20 +3,20 @@ package lms_129
 fun task2(number: Int): Boolean {
 
 
-    var result = false
+    var result = true
 
-    for (i in 2.. number/2)
+    if(number <0){
+      result = false
+    }else{
+        for (i in 2.. number/2){
+            if(number % 2 == 0){
+                result= false
+                break
+            }
 
-        if(number % 2 == 0){
-            result= true
-             break
         }
 
-    if (!result)
-        println("$number is a primenumber")
-    else
-        println("$number is not a primenumber")
-
+    }
 
     return result
 
@@ -24,7 +24,7 @@ fun task2(number: Int): Boolean {
 
 
 fun main (){
-    task2(number = 7)
+    println(task2(number = 2))
 }
 
 
