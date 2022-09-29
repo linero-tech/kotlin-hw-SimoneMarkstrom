@@ -14,18 +14,17 @@ fun task2(number: Int): Boolean {
 
     if (!result)
         println("$number is a primenumber")
-
     else
         println("$number is not a primenumber")
 
 
- return result
+    return result
 
      }
 
 
 fun main (){
-    task2(number = 6)
+    task2(number = 7)
 }
 
 
