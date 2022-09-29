@@ -5,7 +5,7 @@ fun task2(number: Int): Boolean {
 
     var result = true
 
-    if(number <0){
+    if(number <2){
       result = false
     }else{
         for (i in 2.. number/2){
@@ -24,7 +24,7 @@ fun task2(number: Int): Boolean {
 
 
 fun main (){
-    println(task2(number = 2))
+    println(task2(number = 0))
 }
 
 
