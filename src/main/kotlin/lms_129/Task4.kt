@@ -2,14 +2,14 @@ package lms_129
 
 fun task4(): Int {
 
-    val result= 1
-    for (result in 1..1000)
-        if (result % 9 == 0)
+ var totalSum= 0
+    for(number in 1..10000){
 
-            println("$result")
-
-
-    return result
+        if (number%9==0){
+            totalSum= totalSum + number
+        }
+    }
+    return totalSum
 
 }
 
