@@ -8,8 +8,8 @@ fun task2(number: Int): Boolean {
     if(number <2){
       result = false
     }else{
-        for (i in 2.. number/2){
-            if(number % 2 == 0){
+        for (i in 2 until number){
+            if(number % i == 0){
                 result= false
                 break
             }
