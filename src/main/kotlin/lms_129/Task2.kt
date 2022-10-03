@@ -3,22 +3,17 @@ package lms_129
 fun task2(number: Int): Boolean {
 
 
-    var result = true
+    var result = 0
 
-    if(number <2){
-      result = false
-    }else{
-        for (i in 2 until number){
-            if(number % i == 0){
-                result= false
-                break
-            }
-
+    for(i in 1..number){
+        if (number % i == 0){
+            result++
         }
 
     }
 
-    return result
+    return result == 2
+
 
      }
 

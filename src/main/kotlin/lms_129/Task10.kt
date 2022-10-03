@@ -3,26 +3,16 @@ package lms_129
 fun task10(password: String): Boolean {
 
 
-    var result= false
+    val regex1 = Regex("[a-z]")
+    val regex2 = Regex("[A-Z]")
+    val regex3 = Regex("[8-9]")
+    val regex4 = Regex("[$#@]")
 
-
-    val pattern = "[a-zA-Z0-9._-]{6,10}+@".toRegex()
-
-    password.forEach {
-        password
-
-        if (pattern.matches(password)) {
-
-           result= true
-        } else {
-            result = false
-
-        }
-
-    }
-
-
-    return result
+    return password.length in 6..10 &&
+            regex1.containsMatchIn(password) &&
+            regex2.containsMatchIn(password) &&
+            regex3.containsMatchIn(password) &&
+            regex4.containsMatchIn(password)
 }
 
 fun main(){
