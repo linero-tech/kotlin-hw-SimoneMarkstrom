@@ -5,7 +5,7 @@ fun task10(password: String): Boolean {
 
     val regex1 = Regex("[a-z]")
     val regex2 = Regex("[A-Z]")
-    val regex3 = Regex("[8-9]")
+    val regex3 = Regex("[0-9]")
     val regex4 = Regex("[$#@]")
 
     return password.length in 6..10 &&
