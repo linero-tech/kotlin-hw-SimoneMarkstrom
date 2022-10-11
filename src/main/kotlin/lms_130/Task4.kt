@@ -2,12 +2,21 @@ package lms_130
 
 fun task4(items: List<Int>, factor: Int): List<Int> {
 
+    var result = mutableListOf<Int>()
+    // get a list
 
+    items.forEachIndexed() { items, factor ->
+        result.add(items % factor)
 
-return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    }
 
+    // if item % med factor
+    // print result
+    println(result)
+    return result
 
+}
 
-// fun main(){
- //   task4(items= listOf(1,5,11), factor=4)
+ fun main(){
+    task4(items= listOf(1,2,4,5,6), factor=2)
 }

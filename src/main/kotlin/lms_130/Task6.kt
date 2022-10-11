@@ -2,12 +2,27 @@ package lms_130
 
 fun task6(sentence: String): String {
 
+    // create a old string
+    //create a new string
 
+    var oldString = sentence
+    var newString = ""
 
-            return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+   var result= sentence.forEachIndexed{ index, letter ->
+        newString +=if (index % 2 == 0)
+           letter.toUpperCase()
+        else{ letter
+
+        }
+    }
+           println (newString)
+            return result.toString()
    }
 
+fun main () {
+    task6(sentence= "i like Gothenburg")
 
+}
 
 
 
