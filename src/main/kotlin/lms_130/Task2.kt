@@ -3,13 +3,13 @@ package lms_130
 fun task2(items: List<Int>): Int {
 
     // set result to 0
-    var result = 0
+    var totalsum = 0
 
     // create if its not empty
     if(items.isNotEmpty())
         items.forEachIndexed { index, number ->
             if( index % 2 == 0){
-                result += number
+                totalsum += number
 
             }
 
@@ -19,8 +19,8 @@ fun task2(items: List<Int>): Int {
         }
 
 
-     println ( result )
-    return result
+     println ( totalsum )
+    return totalsum
 }
 
 
