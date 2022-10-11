@@ -11,5 +11,5 @@ fun task3(items: List<Int>): List<Int> {
 }
 
 fun main(){
-    task3(listOf(1,5,6,6,2,3,4,5))
+    task3(listOf(5, 6, 5, 6, 7, 8, 7))
 }

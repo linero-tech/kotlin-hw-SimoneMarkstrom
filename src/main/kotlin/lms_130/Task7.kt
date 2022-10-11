@@ -5,10 +5,21 @@ fun task7(items: List<Int>): Int {
     var result = 0
 
     if(items.isNotEmpty()) {
-        val minValue = items.minOrNull()
-        val maxValue = items.maxOrNull()
+        var minVal = items.first()
+        var maxVal = items.first()
 
-        println(minValue)
+        items.forEach { number ->
+            if (number > maxVal) {
+                maxVal = number
+
+            }else if( number < minVal){
+                minVal = number
+            }
+        }
+
+
+
+            println(minVal)
 
     }
 
@@ -16,5 +27,5 @@ fun task7(items: List<Int>): Int {
 }
 
 fun main(){
-    task7(items= listOf(10, 5, 11))
+    task7(items= listOf(-1, 0, 1, 2, 3, 4, 5, -9, -10, 0, 100))
 }

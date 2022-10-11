@@ -20,7 +20,7 @@ fun task6(sentence: String): String {
    }
 
 fun main () {
-    task6(sentence= "i like Gothenburg")
+    task6(sentence= "I LOVE SWEDEN")
 
 }
 
