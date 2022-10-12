@@ -5,22 +5,22 @@ fun task6(sentence: String): String {
     // create a old string
     //create a new string
 
-    var oldString = sentence
-    var newString = ""
 
-   var result= sentence.forEachIndexed{ index, letter ->
-        newString +=if (index % 2 == 0)
-           letter.toUpperCase()
-        else{ letter
+    var result = ""
+
+       sentence.forEachIndexed{ index, letter ->
+       if (index % 2 == 0)
+            result += letter.uppercaseChar()
+        else{ result += letter
 
         }
     }
-           println (newString)
-            return result.toString()
+
+            return result
    }
 
 fun main () {
-    task6(sentence= "I LOVE SWEDEN")
+    println(task6(sentence= "I like Gothenburg"))
 
 }
 
