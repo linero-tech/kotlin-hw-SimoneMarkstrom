@@ -19,7 +19,7 @@ fun task7(items: List<Int>): Int {
 
 
 
-            println(minVal)
+           val result= println(minVal)
 
     }
 
