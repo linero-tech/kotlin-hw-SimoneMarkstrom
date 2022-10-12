@@ -5,19 +5,21 @@ fun task3(items: List<Int>): List<Int> {
     val uniqueListOfNumbers = mutableListOf<Int>()
     val duplicateNumbers = mutableListOf<Int>()
 
-    val result = items.forEach{ number ->
+
+       items.forEach{ number ->
         if (number in uniqueListOfNumbers) {
             duplicateNumbers.add(number)
         } else {
             uniqueListOfNumbers.add(number)
+           var result = duplicateNumbers
         }
 
     }
-    println(duplicateNumbers)
-    return duplicateNumbers
+     var result= duplicateNumbers.toSet()
+    return result.toList()
 
 }
 
 fun main(){
-task3(listOf(1,1,1,2,2,3))
+println(task3(listOf(1,1,2,2,3)))
 }
