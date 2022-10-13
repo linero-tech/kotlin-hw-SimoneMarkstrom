@@ -19,7 +19,7 @@ fun task7(items: List<Int>): Int {
 
 
 
-           val result= println(minVal)
+           val result= (minVal)
 
     }
 
@@ -27,5 +27,5 @@ fun task7(items: List<Int>): Int {
 }
 
 fun main(){
-    task7(items= listOf(-1, 0, 1, 2, 3, 4, 5, -9, -10, 0, 100))
+   println(task7(items= listOf(-1, 0, 1, 2, 3, 4, 5, -9, -10, 0, 100)))
 }

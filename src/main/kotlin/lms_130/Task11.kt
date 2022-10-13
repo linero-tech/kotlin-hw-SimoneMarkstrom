@@ -1,15 +1,39 @@
 package lms_130
 
+import kotlin.test.assertContains
+
 fun task11_1(guests: List<String>): Int {
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    val result= guests.size
+
+
+
+    return result
 }
 
 fun task11_2(guests: List<String>, condition: String): List<String> {
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
-}
+     // create a list
+       var result = guests
 
+      // check if it contains condition
+       guests.contains(condition)
+
+
+
+    // if it contains a condition = save to result
+          var result= guests
+
+
+
+
+
+
+
+
+
+    return result
+}
 fun main() {
 
     // Change the condition to either "-V", "-A", or "-K" to test your code under different conditions
@@ -17,7 +41,7 @@ fun main() {
     val listOfAttendees = listOf(
         "Stéphanie-A",
         "Edmée-K",
-        "Maëlla-K",
+        "Maëlla-V",
         "Océanne-K",
         "Géraldine-K",
         "Maëline-K",
