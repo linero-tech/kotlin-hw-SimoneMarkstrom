@@ -13,16 +13,16 @@ fun task11_1(guests: List<String>): Int {
 
 fun task11_2(guests: List<String>, condition: String): List<String> {
 
-     // create a list
+     // variable for the list
        var result = guests
 
       // check if it contains condition
-       guests.contains(condition)
+        guests.contains(condition)
 
 
 
     // if it contains a condition = save to result
-          var result= guests
+
 
 
 
