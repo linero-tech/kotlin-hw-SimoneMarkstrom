@@ -13,18 +13,16 @@ fun task11_1(guests: List<String>): Int {
 
 fun task11_2(guests: List<String>, condition: String): List<String> {
 
-     // variable for the list
-       var result = guests
 
-      // check if it contains condition
-        guests.contains(condition)
+    // create variable calld result
 
+    // do a loop over list
 
 
-    // if it contains a condition = save to result
+        // check the last two
 
-
-
+         //  if last two charaters == conditon
+             //add name to result
 
 
 

@@ -7,7 +7,7 @@ fun task4(items: List<Int>, factor: Int): List<Int> {
     var result = mutableListOf<Int>()
 
     items.forEach{number ->
-        if(number % factor == 0) {
+        if(number % factor == 0 && number !in result) {
             result.add(number)}
     }
 
@@ -15,7 +15,7 @@ fun task4(items: List<Int>, factor: Int): List<Int> {
 }
 
 fun main(){
-    println(task4(listOf(1, 3, 4, 5, 6), 3, ))
+    println(task4(listOf(1, 2, 3, 4, 5, 1, 2, 3, 4, 6, 7, 8, 6, 7, 9), 2, ))
 }
 
 
