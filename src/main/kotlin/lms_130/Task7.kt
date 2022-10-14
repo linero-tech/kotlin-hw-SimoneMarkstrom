@@ -8,7 +8,7 @@ fun task7(items: List<Int>): Int {
         var minVal = items.first()
         var maxVal = items.first()
 
-            if(items.isNotEmpty()) {
+        if(items.isNotEmpty()) {
         items.forEach { number ->
             if (number > maxVal) {
                 maxVal = number
@@ -20,7 +20,7 @@ fun task7(items: List<Int>): Int {
         }
 
 
-           var result = minVal
+         var result = minVal
 
 
     }
