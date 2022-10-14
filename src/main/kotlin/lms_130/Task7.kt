@@ -7,6 +7,9 @@ fun task7(items: List<Int>): Int {
 
         var minVal = items.first()
         var maxVal = items.first()
+        if(items.isEmpty()){
+            var result = 0 
+        }
 
         if(items.isNotEmpty()) {
         items.forEach { number ->
