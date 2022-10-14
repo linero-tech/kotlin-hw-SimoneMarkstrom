@@ -1,7 +1,5 @@
 package lms_130
 
-import kotlin.test.assertContains
-
 fun task11_1(guests: List<String>): Int {
 
     val result= guests.size
@@ -11,27 +9,33 @@ fun task11_1(guests: List<String>): Int {
     return result
 }
 
+
+
 fun task11_2(guests: List<String>, condition: String): List<String> {
 
-
-    // create variable calld result
-
-    // do a loop over list
+    var result = mutableListOf<String>()
 
 
-        // check the last two
+    for(name in guests){
+        name.takeLast(2)
+        if(name.contains(condition)){
+            result+=name
 
-         //  if last two charaters == conditon
-             //add name to result
-
-
-
-
+        }
+    }
 
 
 
     return result
 }
+
+
+
+
+
+
+
+
 fun main() {
 
     // Change the condition to either "-V", "-A", or "-K" to test your code under different conditions
