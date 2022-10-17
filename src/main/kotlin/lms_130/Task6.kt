@@ -9,9 +9,10 @@ fun task6(sentence: String): String {
     var result = ""
 
        sentence.forEachIndexed{ index, letter ->
-       if (index % 2 == 0)
-            result += letter.uppercaseChar()
-        else{ result += letter
+       result += if (index % 2 == 0)
+             letter.uppercaseChar()
+        else{
+            letter
 
         }
     }

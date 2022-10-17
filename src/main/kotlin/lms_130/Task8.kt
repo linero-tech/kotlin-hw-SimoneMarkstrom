@@ -2,13 +2,18 @@ package lms_130
 
 fun task8(items: List<Int>): List<Int> {
 
-    var highestThree = mutableListOf<Int>()
-    val result = items.toSortedSet().toList()
+    var sortedList = items.distinct().sorted()
+
+    val result = if(sortedList.size < 3){
+        sortedList
+    }else{
+        sortedList.takeLast(3)
+    }
 
 
 
 
-    return result.takeLast(3)
+    return result
 }
 
 

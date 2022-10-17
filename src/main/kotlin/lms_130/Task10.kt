@@ -11,7 +11,7 @@ fun task10(items: List<Int>): List<Int> {
         if (number % 2 == 0) {
             result.add(number * 2)
         } else {
-            if (number % 2 == 1)
+            (number % 2 == 1)
                 result.add(number * 3)
 
         }
