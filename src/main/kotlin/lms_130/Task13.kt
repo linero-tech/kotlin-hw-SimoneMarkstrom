@@ -2,7 +2,7 @@ package lms_130
 
 fun task13_1(customers: List<String>): List<String> {
 
-    val result = customers.toSet().toList()
+    val result = customers.distinct()
     return result
 
 }
