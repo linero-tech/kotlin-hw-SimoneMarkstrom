@@ -24,8 +24,8 @@ fun task14(sentence: String): Char {
         }
     }
 
-    result = maxKey
-    return result
+
+    return maxKey
 }
 
 fun main(){
