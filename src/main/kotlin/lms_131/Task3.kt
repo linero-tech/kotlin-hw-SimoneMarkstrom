@@ -3,9 +3,7 @@ package lms_131
 fun task3(a: Map<Int, String>, b: Map<Int, String>): List<Int> {
 
     var result = mutableListOf<Int>()
-
-    val myListA= a.keys.toList()
-    val myListB = b.keys.toList()
+    
 
      for(key in a.keys) {
 
