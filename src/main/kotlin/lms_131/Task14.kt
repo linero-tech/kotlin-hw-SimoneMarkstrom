@@ -5,27 +5,17 @@ fun task14(sentence: String): Char {
     val dictionary = mutableMapOf<Char, Int>()
     val cleanedSentence = sentence.lowercase().replace(Regex("[.,;]"),"").replace(" ", "")
 
-    cleanedSentence.forEach{letter ->
-        if(letter in dictionary.keys){
-
-            val currentScore = dictionary.get(letter) !!
-            val newScore = currentScore+1
-            dictionary[letter]=newScore
-        }else{
-            dictionary[letter]=1
+    var maxKey = cleanedSentence[0]
+    var maxValue = 0
+    for ((key, value) in dictionary.entries) {
+        if (value > maxValue) {
+            maxValue = value
+            maxKey = key
         }
     }
-    val maxValue = dictionary.values.maxOrNull()
-    val maxValueKeys: MutableList<Char> = mutableListOf()
-    for((key, value) in dictionary) {
-        if (value == maxValue) {
-            maxValueKeys.add(key)
-        }
-    }
-    val result = maxValueKeys[0]
 
-
-    return result
+ 
+    return maxKey
 }
 
 fun main(){
