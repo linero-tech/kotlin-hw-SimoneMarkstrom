@@ -3,7 +3,7 @@ package lms_131
 fun task3(a: Map<Int, String>, b: Map<Int, String>): List<Int> {
 
     var result = mutableListOf<Int>()
-    
+
 
      for(key in a.keys) {
 
