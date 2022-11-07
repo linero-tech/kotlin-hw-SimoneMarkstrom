@@ -4,9 +4,10 @@ fun task12(a: List<Int>, b: List<String>): Map<Int, String> {
 
     val result = mutableMapOf<Int, String>()
 
-    a.zip(b).forEach { pair ->
-        result += pair
+    for ((index, item) in a.withIndex()){
+        result[item] = b[index]
     }
+
     return result
 }
 

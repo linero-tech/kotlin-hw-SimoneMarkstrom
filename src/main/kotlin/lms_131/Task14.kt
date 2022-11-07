@@ -2,30 +2,16 @@ package lms_131
 
 fun task14(sentence: String): Char {
 
-    val dictionary = mutableMapOf<Char, Int>()
-    val cleanedSentence = sentence.lowercase().replace(Regex("[.,;]"),"").replace(" ", "")
+    val textAsWord = sentence.lowercase().replace(Regex("[.,;]"),"").replace(" ", "")
+    val letterCounterMap = mutableMapOf<Char, Int>()
 
-    cleanedSentence.forEach{letter ->
-        if(letter in dictionary.keys){
+  textAsWord.forEach{letter->
+      letterCounterMap[letter] = letterCounterMap.getOrDefault(letter, 0) +1
 
-            val currentScore = dictionary.get(letter) !!
-            val newScore = currentScore+1
-            dictionary[letter]=newScore
-        }else{
-            dictionary[letter]=1
-        }
-    }
-    var maxKey = cleanedSentence[0]
-    var maxValue = 0
-    for ((key, value) in dictionary.entries) {
-        if (value > maxValue) {
-            maxValue = value
-            maxKey = key
-        }
-    }
+  }
 
+ return letterCounterMap.toList().sortedBy { (key, value)->value }.last().first
 
-    return maxKey
 }
 
 fun main(){

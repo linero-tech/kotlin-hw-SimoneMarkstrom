@@ -6,11 +6,10 @@ fun task11(mapa: Map<Int, String>, prospect: Int): Boolean {
 
 
     for(entry in mapa){
-        if(entry.key != prospect){
-            result
-        }else{
+        if(entry.key == prospect){
             result = true
         }
+
     }
 
 
@@ -19,6 +18,6 @@ fun task11(mapa: Map<Int, String>, prospect: Int): Boolean {
 }
 
 fun main(){
-    println(task11(mapa = mapOf(1 to "A", 2 to "B", 3 to "C"), prospect = 3))
+    println(task11(mapa = mapOf(1 to "A", 2 to "B", 3 to "C"), prospect = 1))
 }
 
