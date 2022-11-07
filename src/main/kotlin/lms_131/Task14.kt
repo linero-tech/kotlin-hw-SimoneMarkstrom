@@ -15,16 +15,16 @@ fun task14(sentence: String): Char {
             dictionary[letter]=1
         }
     }
-    val maxValue = dictionary.values.maxOrNull()
-    val maxValueKeys: MutableList<Char> = mutableListOf()
-    for((key, value) in dictionary) {
-        if (value == maxValue) {
-            maxValueKeys.add(key)
+    var maxKey = cleanedSentence[0]
+    var maxValue = 0
+    for ((key, value) in dictionary.entries) {
+        if (value > maxValue) {
+            maxValue = value
+            maxKey = key
         }
     }
-    val result = maxValueKeys[0]
 
-
+    result = maxKey
     return result
 }
 
