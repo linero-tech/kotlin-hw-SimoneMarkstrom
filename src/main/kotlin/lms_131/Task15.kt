@@ -11,7 +11,7 @@ fun task15(sentence: String): Map<Char, Int> {
     cleanedSentence.forEach{word->
         val firstLetter = word[0]
         if(firstLetter in result.keys){
-            val currentScore = result.get(firstLetter) !!
+            val currentScore = result[firstLetter]!!
             val newScore = currentScore+1
             result[firstLetter]=newScore
 
