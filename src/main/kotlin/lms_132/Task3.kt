@@ -13,15 +13,6 @@ fun task3(sentence: String?): String {
 }
 
 fun main() {
-    println(task3(sentence = null))
+    println(task3(sentence = ""))
 }
 
-
-
-/*
-fun main() {
-    val input = "H...H"
-    val output = input.replace('.', 'B')
-    println(output)  // Prints "HBBBH"
-}
-*/
