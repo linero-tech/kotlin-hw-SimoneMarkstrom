@@ -2,5 +2,22 @@ package lms_132
 
 fun task10(items: List<String?>): Int? {
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    var result: Int? = 0
+    val name = "Nemo"
+
+    if(items.isEmpty() || name !in items){
+        result = null
+    }else{
+        items.forEach{word ->
+            if (name in items) {
+                result = items.indexOf(name)
+            }
+        }
+    }
+
+    return result
+}
+
+fun main(){
+    println(task10(items = listOf("I", "cannot", "find", "him", "nEmo")))
 }
