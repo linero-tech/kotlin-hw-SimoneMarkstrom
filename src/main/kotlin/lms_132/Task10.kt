@@ -9,7 +9,7 @@ fun task10(items: List<String?>): Int? {
                 result = index
             }
         }
-    
+
 
     return result
 }

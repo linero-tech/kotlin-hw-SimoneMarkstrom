@@ -3,13 +3,14 @@ package lms_132
 fun task3(sentence: String?): String {
 
      var result = ""
-    var vowels = listOf('a', 'e', 'i' ,'o','u')
+    
     if(sentence.isNullOrEmpty()){
         result += "*"
-    }else{ result= sentence.replace(Regex("['a''e''i''o''u''A''E''I'O'U']"),"*")
+    }else{
+        result= sentence.replace(Regex("[aeiouAEIOU]"),"*")
     }
 
-    return result.toString()
+    return result
 }
 
 fun main() {
