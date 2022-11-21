@@ -8,7 +8,7 @@ fun task8(items: List<String?>): List<String> {
             result += item
             }
         }
-    
+
     return result
 }
 fun main(){

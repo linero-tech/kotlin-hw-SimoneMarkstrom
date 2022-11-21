@@ -2,18 +2,14 @@ package lms_132
 
 fun task10(items: List<String?>): Int? {
 
-    var result: Int? = 0
-    val name = "Nemo"
+    var result: Int? = null
 
-    if(items.isEmpty() || name !in items){
-        result = null
-    }else{
-        items.forEach{word ->
-            if (name in items) {
-                result = items.indexOf(name)
+        items.withIndex().forEach {(index, item) ->
+            if (item == "Nemo") {
+                result = index
             }
         }
-    }
+    
 
     return result
 }
