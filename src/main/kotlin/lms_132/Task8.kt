@@ -3,13 +3,12 @@ package lms_132
 fun task8(items: List<String?>): List<String> {
 
     val result = mutableListOf<String>()
-    for(word in items){
-        if (word != null) {
-            if (word.length !in 0..3) {
-                result += word
+    items.forEach{item->
+        if (item != null && item.length >3) {
+            result += item
             }
         }
-    }
+    
     return result
 }
 fun main(){

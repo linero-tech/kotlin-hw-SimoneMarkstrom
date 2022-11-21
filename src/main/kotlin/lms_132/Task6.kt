@@ -15,5 +15,5 @@ fun task6(items: List<Int?>): List<Int?> {
         return result
     }
     fun main() {
-        println(task6(items = listOf()))
+        println(task6(items = listOf(1, 2, null, 4)))
     }
