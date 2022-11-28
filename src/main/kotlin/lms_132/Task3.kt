@@ -3,7 +3,7 @@ package lms_132
 fun task3(sentence: String?): String {
 
      var result = ""
-    
+
     if(sentence.isNullOrEmpty()){
         result += "*"
     }else{
