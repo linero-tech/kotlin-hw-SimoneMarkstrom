@@ -13,7 +13,7 @@ fun censorship(sentence: String): String{
   return modifiedSentence.joinToString(separator = " ")
 }
 fun main(){
-  println(censorship("I live in Swed"))
+  println(censorship("Avoid saying bad words"))
 }
 //Create function argument & return = String
 //Loop sentence to get each word
