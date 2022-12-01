@@ -7,7 +7,7 @@ fun censorship(sentence: String): String{
     modifiedSentence += if(word.length < 5){
       word
     }else{
-      "".repeat(word.length)
+      "*".repeat(word.length)
     }
   }
   return modifiedSentence.joinToString(separator = " ")
