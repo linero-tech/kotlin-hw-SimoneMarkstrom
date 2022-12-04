@@ -1,19 +1,25 @@
 package lms_133
 
 
-    fun harshad(number: Int): Boolean{
+fun harshad(number: Int): Boolean{
 
-        val numberAsString = number.toString()
-        var total = 0
+    val numberAsString = number.toString()
+    var total = 0
+    var result = true
 
-        for(digit in numberAsString){
+    numberAsString.forEach{digit ->
+        if(digit.digitToInt() != 0) {
             total += digit.digitToInt()
+            result = number % total == 0
+        }else{
+            result = false
         }
-        return number % total == 0
     }
-    fun main(){
-        println(harshad(number = 22))
-    }
+    return result
+}
+fun main(){
+    println(harshad(number = 0))
+}
 
 // What is the number?
 //Is the number a harshad? How do we count that?
