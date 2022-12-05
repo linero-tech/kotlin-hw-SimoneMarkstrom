@@ -2,7 +2,7 @@ package lms_133
 
 
 fun counter(word: String): Boolean {
-    val alphabet = listOf('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
+    val alphabet = ('a'..'z')
     var indexSum = 0
     word.lowercase().forEach{letter ->
         if (letter in alphabet) {
