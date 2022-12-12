@@ -2,7 +2,7 @@ package lms_132
 
 fun task5(word: String?): Boolean {
     var result = true
-    val newWord = word?.toLowerCase()
+    val newWord = word?.lowercase()
     val duplicateLetter = mutableListOf<Char>()
     // is word null or empty, result = false
     if (newWord.isNullOrEmpty()) {
