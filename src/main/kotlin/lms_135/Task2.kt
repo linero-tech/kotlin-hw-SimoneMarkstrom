@@ -13,14 +13,14 @@ class Account(val balance: Double){
         }
     }
 
-    fun generateBankFee() = balance - ((balance / 100) * 5)
+    fun fee() = balance - ((balance / 100) * 5)
 }
 
 fun main(){
     val myMoney = Account(300.0)
     println(myMoney.deposit(150.0))
     println(myMoney.withdrawal(100.0))
-    println(myMoney.generateBankFee())
+    println(myMoney.fee())
 }
 //Create a function deposit with one argument of double and no return value
 //Create a function withdrawal with one argument of double and no return
