@@ -1,16 +1,18 @@
 package lms_135
 
-
 //Create class Hero, constructor empty, two properties: health = 10 and level = 0
 class Hero() {
-    val health = 10
-    val level = 0
+    var health = 10
+    var level = 0
     // Create a function sick, no arguments, no return type, reduce health by 1
-    fun sick() = health - 1
+    fun sick(){
+        health -= 1
+    }
+
     // Create function heal, no arguments, no return, increase health by 1
-    fun heal() = health + 1
+    fun heal() = health++
     // Create function attack, no argument, no return, increase level by 1
-    fun attack() = level + 1
+    fun attack() = level++
 }
 
 fun main(){
