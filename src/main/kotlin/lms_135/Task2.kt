@@ -3,13 +3,14 @@ package lms_135
 
 //Create blueprint of class Account
 //Create balance variable called balance, just readable, of type Double
-class Account(val balance: Double){
+class Account(var balance: Double){
 
-    fun deposit(income: Double) = balance + income
-
+    fun deposit(income: Double) {
+        balance += income
+    }
     fun withdrawal(cost: Double) {
         if(balance > cost){
-            balance - cost
+            balance -= cost
         }
     }
 
