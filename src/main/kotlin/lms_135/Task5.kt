@@ -3,9 +3,9 @@ package lms_135
 //Create class Circle, constructors = radius type Double, make it private
 class Circle(private val radius: Double) {
     //Create function area, no arguments, return Double
-    fun area(): Double = 3.14 * (radius * radius)
+    fun area(): Double =  radius * radius * 3.14159265
     //Create function perimeter, no argument, return Double
-    fun perimeter(): Double = (radius * 2) * 3.14
+    fun perimeter(): Double = (radius * 2) * 3.14159265
 }
 
 fun main(){
