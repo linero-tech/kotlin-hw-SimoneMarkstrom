@@ -13,7 +13,11 @@ class Student(val grades: MutableList<Double>){
         return average
     }
     fun bonus(){
-        grades.replaceAll { it + 1 }
+     //Solution 1  grades.replaceAll { it + 1 }
+        grades.forEachIndexed{ index, grade->
+            grades[index] = grade + 1
+
+        }
 
     }
     fun lowest(): Double {
