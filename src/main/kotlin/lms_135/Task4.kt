@@ -10,9 +10,13 @@ class Hero() {
     }
 
     // Create function heal, no arguments, no return, increase health by 1
-    fun heal() = health++
+    fun heal() {
+        health++
+    }
     // Create function attack, no argument, no return, increase level by 1
-    fun attack() = level++
+    fun attack() {
+        level+=1
+    }
 }
 
 fun main(){

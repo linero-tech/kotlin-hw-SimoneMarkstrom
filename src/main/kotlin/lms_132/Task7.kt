@@ -3,7 +3,7 @@ package lms_132
 fun task7(sentence: String?): Map<String, Int> {
 
     val result = mutableMapOf("letters" to 0, "digits" to 0)
-    val cleanedSentence = sentence?.toLowerCase()?.replace(Regex("[ ]"),"")
+    val cleanedSentence = sentence?.lowercase()?.replace(Regex("[ ]"),"")
 
     if(sentence.isNullOrEmpty()){
         result += result
