@@ -3,14 +3,16 @@ package lms_135
 
 //Create blueprint of class Account
 //Create balance variable called balance, just readable, of type Double
-class Account(var balance: Double){
+class Account(balance: Double){
 
-    fun deposit(income: Double) {
-        balance += income
+    var balance: Double = balance
+         private set
+    fun deposit(amount: Double) {
+        balance += amount
     }
-    fun withdrawal(cost: Double) {
-        if(balance > cost){
-            balance -= cost
+    fun withdrawal(amount: Double) {
+        if(balance >= amount){
+            balance -= amount
         }
     }
 
