@@ -16,7 +16,10 @@ class Student(val grades: MutableList<Double>){
         grades.replaceAll { it + 1 }
 
     }
-    fun lowest(): Double = grades.minOf{Double -> Double}
+    fun lowest(): Double {
+        val sortedGrades = grades.sorted()
+        return sortedGrades.first()
+    }
 
     fun highest(): Double = grades.maxOf{Double -> Double}
 }
