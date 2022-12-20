@@ -3,7 +3,9 @@ package lms_135
 //Create class Hero, constructor empty, two properties: health = 10 and level = 0
 class Hero() {
     var health = 10
+    private set
     var level = 0
+    private set
     // Create a function sick, no arguments, no return type, reduce health by 1
     fun sick(){
         health -= 1
